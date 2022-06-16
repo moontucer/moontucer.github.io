@@ -108,7 +108,7 @@ const nav = document.querySelector(".nav"),
                 lscreen = document.getElementById("loading-screen");
                 hero = document.getElementById("hero");
                 
-                setTimeout(()=>{closeLoadingScreen(lscreen)}, 5000); // FOR DEMO
+                setTimeout(()=>{closeLoadingScreen(lscreen)}, 5000); // Juste pour la démonstration
               }
 
   $(document).ready(function(){
