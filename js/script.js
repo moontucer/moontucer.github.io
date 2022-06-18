@@ -106,7 +106,6 @@ const nav = document.querySelector(".nav"),
               document.body.onload = ()=>{
                   // Here I can load some data (any) and then call closeLoadingScreen(lscreen) function such as:
                 lscreen = document.getElementById("loading-screen");
-                hero = document.getElementById("hero");
                 
                 setTimeout(()=>{closeLoadingScreen(lscreen)}, 5000); // Juste pour la démonstration
               }

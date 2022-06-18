@@ -32,7 +32,7 @@ body.dark
   justify-content: center;
 }
 .loading-screen{
-  background-color: var(--loading-screen-background, #1C1C1C);
+  background-color: var(--loading-screen-background, #000000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@ body.dark
 .spinner {
   width: var(--spinner-size, 64px) !important;
   height: var(--spinner-size, 64px) !important;
-  background: linear-gradient(180deg, #ff4444 0%, rgba(0, 0, 0, 0.1) 25%);
+  background: linear-gradient(180deg, #ff4444 0%, rgba(19, 18, 18, 0.747) 25%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -68,7 +68,7 @@ body.dark
   width: calc(100% - 4px);
   height: calc(100% - 4px);
   border-radius: 50%;
-  background: var(--loading-screen-background, #1C1C1C);
+  background: var(--loading-screen-background, #000000);
   z-index: 01;
 }
 .spinner-container img{
