@@ -1,555 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mountasser e-Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="/images/newfavicon.png">
-  <!-- ===== CSS Files ===== -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/skins/color-1.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- ====== Style Switcher ====== -->
-  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-  <link rel="stylesheet" href="css/style-switcher.css">
-  <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <!--<title> Loading Animation | CodingLab </title>-->
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-     <!--Linking jQuery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!DOCTYPE HTML>
 
 
-<!--
-  <script>
-    $(document).on("load",function(){
-      $(".loading-screen").fadeOut("slow");
-    });
-  </script>
-  -->
+<html>
+	<head>
+		<title>Mountasser Labchiri</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<link rel="shortcut icon" type="image/png" href="images/newfavicon.png" />
+	<body class="is-preload">
 
+		<!-- Header -->
+			<header id="header">
+				<h1 id="urgent1">Mountasser here!</h1>
+				<p id="urgent2">Mountasser Labchiri, Computer Scientist,<br />
+				And this is my personal portfolio.<br />
+				Feel welcome 💚<br />
+				</p>
+			</header>
+			
+			<form action="portfolio.html">
+				<button id="myButton">Enter App</button><br>
+			</form>
 
-<body>
+		<!-- Footer -->
+			<footer id=footer>
+				<hr id="urgent4">
+				<form id="signup-form" method="post" action="#">
+					<input type="email" name="email" id="email" placeholder="Your Email Address Here..." />
+					<input id="submit" type="submit" value="Submit" />
+				</form>
+				<ul id="icons2" class="icons">
+					<li><a href="https://github.com/moontucer" target="blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:moontucer@icloud.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; All rights reserved.</li><li>Credits: <a href="https://mountasser.me/">Mountasser</a></li>
+				</ul>
+			</footer>
 
+		<!-- Scripts -->
+				<script src="assets/js/main.js"></script>
+				<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+				<script>
+					
+					$(document).ready(function(){
+						let margeIni1 = $("#urgent1").css("marginBottom");
+						$("#urgent1").css("marginBottom", "15em")
+						$("#urgent1").animate( {marginBottom: margeIni1}, 1500
+						)
+						let margeIni2 = $("#urgent2").css("marginLeft");
+						$("#urgent2").css("marginLeft", "-25em")
+						$("#urgent2").animate( {marginLeft: margeIni2}, 3000
+						)
+						let margeIni3 = $("#myButton").css("marginLeft");
+						$("#myButton").css("marginLeft", "50rem")
+						$("#myButton").animate( {marginLeft: margeIni3}, 4500
+						)
+						
+						let margeIni5 = $("#footer").css("marginBottom");
+						$("#footer").css("marginBottom", "-20rem")
+						$("#footer").animate( {marginBottom: margeIni5}, 4500
+						)
+						let margeIni4 = $("#urgent4").css("marginLeft");
+						$("#urgent4").css("marginLeft", "50rem")
+						$("#urgent4").animate( {marginLeft: margeIni4}, 6000
+						)
+					})
+					
 
+				</script>
 
-  <div class="loading-screen" id="loading-screen">
-    <div class="spinner-container">
-      <img src="images/newfavicon.png"/>
-      <div class="spinner"></div>
-    </div>
-    <div>
-    <p id="loading">Mountasser Labchiri</p>
-  </div>
-  </div>
-
-
-  
-  <!-- ===== Main Container Start ===== -->
-  <div class="main-container">
-    <!-- ===== Aside Start ===== -->
-    <div class="aside">
-      <div class="logo">
-        <a href="#"><span>M</span>ountasser</a>
-      </div>
-      <div class="nav-toggler">
-        <span></span>
-      </div>
-      <ul class="nav">
-        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
-        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-      </ul>
-    </div>
-    <!-- ===== Aside End ===== -->
-    <!-- ===== Main Content Start ===== -->
-    <div class="main-content">
-      <!-- ===== Home Section Start ===== -->
-      <section class="home active section" id="home"> 
-        <div class="container">
-          <div class="row">
-            <div class="home-info padd-15">
-              <h3 class="hello">Hello, my name is <span class="name">Mountasser</span></h3>
-              <h3 class="my-profession">I am into <span class="typing"> </span></h3>
-              <p>Master of Computer Science undergraduate. Passionate about IT sphere, finance expertise, and business. I aim to build a career path in the field with my touch.</p>
-              <a href="/assets/FinalCV.pdf" target="_blank" class="btn">Review CV</a>
-            </div>
-            <div class="home-img padd-15">
-              <img src="images/hero.png" id="hero" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Home Section End ===== -->
-      <!-- ===== About Section Start ===== -->
-      <section class="about section" id="about"> 
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  <h3>I'm Mountasser Labchiri, a <span>Financial IT Engineering</span> student.</h3>
-                  <p>Due to the fact that information technology is a field that I am mainly passionate about, I aim to bring about my career in the sphere. I have a background in mathematics and for the time being, I am an undergraduate of the National School for Computer Science.
-                    Subsequently, I am currently working to be a Data Scientist, chiefly in finance expertise fields.
-                    I am, as well, interested in Blockchain technology.
-                    For further information about me, I am only a direct message away!</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="personal-info padd-15">
-                  <div class="row">
-                    <div class="info-item padd-15">
-                      <p>Birthday: <span>28 Juin 2001</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Age: <span>21</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Website: <span>mountasser.me</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Email: <span>mountasser_labchiri@um5.ac.ma</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Degree: <span>Master of Computer Science</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Phone: <span>+212 603 964 607</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Location: <span>Morocco</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Freelance: <span>Available</span></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills padd-15">
-                  <div class="row">
-                    <div class="skill-item padd-15">
-                      <h5>JavaScript</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 86%;"></div>
-                        <div class="skill-percent">86%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>PL/SQL</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 66%;"></div>
-                        <div class="skill-percent">66%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Python</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 96%;"></div>
-                        <div class="skill-percent">96%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Dart</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 76%;"></div>
-                        <div class="skill-percent">76%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2021 - 2024
-                          </h3>
-                          <h4 class="timeline-title">Master in Computer Science</h4>
-                          <p class="timeline-text">ENSIAS is a leading engineering school from which, elite people in the field lead the country's technology and scientific development. A school where I chose my path to be Data Science and Finance, and where I developed my leadership and soft skills.</p>
-                        </div>
-                             <!-- ===== timeline item ===== -->
-                             <div class="timeline-item">
-                              <div class="circle-dot"></div>
-                              <h3 class="timeline-date">
-                                <i class="fa fa-calendar"></i> 2019 - 2021
-                              </h3>
-                              <h4 class="timeline-title">Mathematics & Physics Preparatory Classes</h4>
-                              <p class="timeline-text">Two intense years that cover almost every Mathematics and Physics field in which, I developed logical reasoning, critical thinking, problem solving, time management, and a hustler attitude.</p>
-                            </div>
-                                 <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> 2016 - 2019
-                          </h3>
-                          <h4 class="timeline-title">International Baccalaureate</h4>
-                          <p class="timeline-text">During my high school three years, I had the chance to gain knowledge covering various interesting subjects which helped me have a clue about numerous domains and about what I am chiefly into.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="experience padd-15">
-                  <h3 class="title">Projects</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> Mar 2022 - June 2022
-                          </h3>
-                          <h4 class="timeline-title">Cross-Platform Currency Converter</h4>
-                          <p class="timeline-text">Finance application running on Android, iOS, Web, Windows, macOS, and Linux. It converts over 200 currencies at current exchange rates and provides data charts, along with its User Login, SRS Document, Logo, and UML Use Case. Tech: Flutter, Firebase, API.</p>
-                        </div>
-                             <!-- ===== timeline item ===== -->
-                             <div class="timeline-item">
-                              <div class="circle-dot"></div>
-                              <h3 class="timeline-date">
-                                <i class="fa fa-calendar"></i> Sep 2021 - Feb 2022
-                              </h3>
-                              <h4 class="timeline-title">UX/UI Frontend Design</h4>
-                              <p class="timeline-text">Creating beautiful responsive UI designs and implementing them using HTML, CSS, FlexBox/Grid, JavaScript, applied visual design and accessibility/animation such as Landing Pages.</p>
-                            </div>
-                                 <!-- ===== timeline item ===== -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"></i> Feb 2021 - Jul 2021
-                          </h3>
-                          <h4 class="timeline-title">Epidemic Propagation Simulating Study (Coronavirus)</h4>
-                          <p class="timeline-text">Modelization of pandemic propagation using mathemtical epidemiology, building SID (a stochastic model with graphs and network theories) and SIS (a deterministic model using differential math), and implemeting results with Python's Matplotlib, Numpy and Scilab libraries.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== About Section End ===== -->
-      <!-- ===== Services Section Start ===== -->
-      <section class="service section" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Services</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- ===== Service item Start ====== -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-mobile-alt"></i>
-                </div>
-                <h4>Mobile Development</h4>
-                <p>I can create FullStack mobile applications (Android and iOS) using Flutter, Dart, APIs, and Firebase.</p>
-              </div>
-            </div>
-            <!-- ===== Service item End ====== -->
-             <!-- ===== Service item Start ====== -->
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-laptop-code"></i>
-                </div>
-                <h4>Data Science</h4>
-                <p>Data Engineering, cleaning, analysis and ML model implementation using Python, Oracle SQL Developer, R, and MS Excel.</p>
-              </div>
-            </div>
-            <!-- ===== Service item End ====== -->
-             <!-- ===== Service item Start ====== -->
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-palette"></i>
-                </div>
-                <h4>Web Design</h4>
-                <p>UX/UI creation and implementation using Adobe XD, Figma, Adobe Photoshop, and Canva.</p>
-              </div>
-            </div>
-            <!-- ===== Service item End ====== -->
-             <!-- ===== Service item Start ====== -->
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-code"></i>
-                </div>
-                <h4>Web Development</h4>
-                <p>FullStack websites building using HTML, CSS, JavaScript, React.js, Node.js, PHP (Laravel), and MongoDB.</p>
-              </div>
-            </div>
-            <!-- ===== Service item End ====== -->
-             <!-- ===== Service item Start ====== -->
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-search"></i>
-                </div>
-                <h4><Datag></Datag>Technical Analysis</h4>
-                <p>Risk Management, Chart Analysis for trading using Technical and Fundamental Analysis, and Portfolio Management.</p>
-              </div>
-            </div>
-            <!-- ===== Service item End ====== -->
-             <!-- ===== Service item Start ====== -->
-             <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon">
-                  <i class="fa fa-bullhorn"></i>
-                </div>
-                <h4>Digital Marketing</h4>
-                <p>Creating Ad Campaigns and be in charge of the business manager, using Facebook Ads and Google Adwords.</p>
-              </div>
-            </div>
-            <!-- ===== Service item End ====== -->
-          </div>
-        </div>
-      </section>
-      <!-- ===== Services Section End ===== -->
-      <!-- ===== Portfolio Section Start ===== -->
-      <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Portfolio</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-heading padd-15">
-              <h2 align="center">What have I worked on lately?</h2>
-            </div>
-          </div>
-          <div class="portfolio-img">
-            <p align="center">
-              <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" /></a>
-              <a href="https://dart.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dart-colored.svg" width="36" height="36" alt="Dart" /></a>
-              <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" /></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript" /></a>
-              <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
-              <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
-              <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
-              <a href="https://redux.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" width="36" height="36" alt="Redux" /></a>
-              <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" /></a>
-              <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
-              <a href="https://www.oracle.com/uk/index.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" /></a>
-              <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" /></a>
-              <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>
-              <a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg" width="36" height="36" alt="Flutter" /></a>
-              <a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="36" height="36" alt="Photoshop" /></a>
-              <a href="https://www.adobe.com/uk/products/xd.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/xd-colored.svg" width="36" height="36" alt="XD" /></a>
-              <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
-              <a href="https://solana.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/solana-colored.svg" width="36" height="36" alt="Solana" /></a>
-              <a href="https://metamask.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/metamask-colored.svg" width="36" height="36" alt="MetaMask" /></a>
-              <a href="https://web3js.readthedocs.io/en/v1.7.1/#" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/web3js-colored.svg" width="36" height="36" alt="Web3Js" /></a>
-              </p>
-          </div>
-          <br><hr><br>
-          <div class="row">
-            <!-- ====== portfolio item start ====== -->
-            <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href= "images/portfolio/pro1.png" target=" "><img src="images/portfolio/pro1.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <!-- ====== portfolio item End ====== -->
-             <!-- ====== portfolio item start ====== -->
-             <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href= "images/portfolio/pro2.png" target=" "><img src="images/portfolio/pro2.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <!-- ====== portfolio item End ====== -->
-             <!-- ====== portfolio item start ====== -->
-             <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href= "images/portfolio/pro3.png" target=" "><img src="images/portfolio/pro3.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <!-- ====== portfolio item End ====== -->
-             <!-- ====== portfolio item start ====== -->
-             <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href= "images/portfolio/pro4.png" target=" "><img src="images/portfolio/pro4.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <!-- ====== portfolio item End ====== -->
-             <!-- ====== portfolio item start ====== -->
-             <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href= "images/portfolio/pro5.png" target=" "><img src="images/portfolio/pro5.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <!-- ====== portfolio item End ====== -->
-             <!-- ====== portfolio item start ====== -->
-             <div class="portfolio-item padd-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <a href= "images/portfolio/pro6.png" target=" "><img src="images/portfolio/pro6.png" alt=""></a>
-                </div>
-              </div>
-            </div>
-            <!-- ====== portfolio item End ====== -->
-          </div>
-          <hr>
-        </div>
-      </section>
-      <!-- ===== Portfolio Section End ===== -->
-      <!-- ===== Contact Section Start ===== -->
-      <section class="contact section" id="contact">
-        <div action="/" method="POST" class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <h3 class="contact-title padd-15">Do You Have Any Questions?</h3>
-          <h4 class="contact-sub-title padd-15">I'M AT YOUR DISPOSAL</h4>
-          <div class="row">
-            <!-- ===== Contact info item start ====== -->
-            <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-phone"></i></div>
-              <h4>Call me on</h4>
-              <p>+212 603 964 607</p>
-            </div>
-            <!-- ===== Contact info item end ====== -->
-             <!-- ===== Contact info item start ====== -->
-             <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-              <h4>Based in</h4>
-              <p>Rabat, Morocco</p>
-            </div>
-            <!-- ===== Contact info item end ====== -->
-             <!-- ===== Contact info item start ====== -->
-             <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
-              <h4>Email</h4>
-              <p><a href="mailto:moontucer@icloud.com" style = " color: rgb(100, 89, 89);text-decoration: underline">moontucer@icloud.com</a></p>
-            </div>
-            <!-- ===== Contact info item end ====== -->
-             <!-- ===== Contact info item start ====== -->
-             <div class="contact-info-item padd-15">
-              <div class="icon"><i class="fa fa-globe-europe"></i></div>
-              <h4>Connect</h4>
-              <p><a href="https://www.linkedin.com/in/mountasser" style = "text-decoration: underline;color: rgb(100, 89, 89)">linkedin.com/in/mountasser</a></p>
-            </div>
-            <!-- ===== Contact info item end ====== -->
-          </div>
-          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-          <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
-          <!-- ====== Contact Form ====== -->
-          <form action="contact-form.php" id="contactForm" method="post">
-            <div class="row">
-              <div class="contact-form padd-15">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input name="name" type="text" class="form-control" placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input name="email" type="email" class="form-control" placeholder="Email">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input name="subject" type="text" class="form-control" placeholder="Subject">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea name="message" class="form-control" id=""  placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <button name="submit" type="submit" class="btn" id="myButton">Send Message</button>
-                    <br><br><hr><br><br>
-                    <div class="portfolio-img">
-                      <p class="contact-sub-title padd-15" align="left"> <a href="https://discord.com/users/Mountasser#3407" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" /></a> &nbsp <a href="https://www.facebook.com/moontucer" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/facebook.svg" width="32" height="32" /></a> &nbsp <a href="https://www.github.com/moontucer" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/1024px-Github-desktop-logo-symbol.svg.png" width="35" height="35" /></a> &nbsp <a href="http://www.instagram.com/moontucer" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> &nbsp <a href="https://www.linkedin.com/in/mountasser" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a> &nbsp <a href="http://www.medium.com/@moontucer" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png" width="34" height="34" /></a> &nbsp <a href="https://www.twitter.com/unaveragestoic" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" /></a></p>
-                      <img id="signature" src="/images/finalSignature.png">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-      <!-- ===== Contact Section End ===== -->
-    </div>
-    <!-- ===== Main Content End ===== -->
-  </div>
-  <!-- ===== Main Container End ===== -->
-  <!-- ===== Style Switcher Start ===== -->
-  <div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-      <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon">
-      <i class="fas "></i>
-    </div>
-    <h4>Theme Colors</h4>
-    <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
-  </div>
-  <!-- ===== Style Switcher End ===== -->
-  <!-- ===== JS Files ===== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-  <script src="js/script.js"></script>
-  <script src="js/style-switcher.js"></script>
-</body>
-
-<style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAGwAAADwAAAr/AAAK/wAAADsAAAAbAAAABwAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAGgAACv8AAAr/AAAK/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAABsAAAA9AAAK/x8fmf8AAAr/AAAARgAAABwAAAALAAAABQAAAAEAAAAAAAAAAAAAAAAAAAABAAAACAAAABsAAAAAAAAK/x8fmf8AAAr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAbAAAAPgAACv8fH5n/AAAK/wAAAGwAAABFAAAAGAAAAA0AAAAHAAAAAwAAAAEAAAABAAAAAQAAAAgAAAAbAAAAPAAACv8fH5n/AAAK/wAACv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAGgAAADwAAAr/Hx+Z/wAACv8AAACLAAAAbQAAAEYAAAAZAAAADwAAAAsAAAAGAAAABAAAAAMAAAAJAAAAGwAAADwAAAr/Hx+Z/wAACv8AAAAAAAAAJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAABgAAAA6AAAK/x8fmf8AAAr/AAAK/wAAAIQAAABwAAAAUQAAACYAAAAWAAAADwAAAAsAAAAIAAAADAAAABwAAAA9AAAK/x8fmf8AAAr/AAAAPAAAABsAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAANAAACv8fH5n/Hx+Z/wAACv8AAAr/AAAAbgAAAG4AAABjAAAAQQAAACYAAAAYAAAAEgAAABMAAAAgAAAAPgAACv8fH5n/AAAK/wAAADwAAAAbAAAACAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8AAAr/Hx+Z/wAACv8AAAr/Hx+Z/wAACv8AAABFAAAAXAAAAGsAAABgAAAARAAAACwAAAAhAAAAKwAAAEEAAAr/AADm/wAACv8AAAA9AAAAGwAAAAgAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK/x8fmf8AAAr/AAAK/wAACv8AAAr/Hx+Z/wAACv8AAAA5AAAAYAAAAG8AAABlAAAATwAAAEIAAABQAAAK/wAA5v8AAAr/AAAAPwAAAB0AAAAJAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACv8fH5n/AAAK/wAAACgAAAAYAAAABwAAAAMAAAr/Hx+Z/wAACv8AAABLAAAAbwAAAH4AAABzAAAAagAACv8AAOb/AAAK/wAAAEMAAAAiAAAADAAAAAMAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK/wAACv8AAAAKAAAADAAAAAYAAAAAAAAAAAAAAAAAAAr/Hx+Z/wAACv8AAABuAAAAiQAAAIYAAAr/AADm/wAACv8AAABVAAAAKQAAABQAAAAIAAAAAwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAr/Hx+Z/wAACv8AAAr/AAAK/wAA5v8AAAr/AAAAcQAAAEwAAAAeAAAAEQAAAAsAAAAGAAAABAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAGzo6Pf8AAAr/AAD//wAA//8AAOb/AAAK/wAAAIsAAAB1AAAAUwAAACkAAAAWAAAADgAAAAsAAAAHAAAABgAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAABsAAAA+Ojo9/wAACv8AAP//AAD//wAA//8AAAr/AAAAggAAAHoAAABkAAAAQgAAACUAAAAWAAAAEQAAAA8AAAARAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAbAAAAPjo6Pf8AAAr/BQWh/wAA5v8AAP//AAD//wAACv8AAABlAAAAawAAAGsAAABfAAAAQQAAACkAAAAfAAAAHwAAACkAAAAuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAGwAAAD46Oj3/AAAK/wUFof8AAOb/BQWh/wAACv8AAAr/Hx+Z/wAACv8AAABFAAAAWwAAAGsAAABgAAAATQAAAEAAAABBAAAATgAAAFUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAABsAAAA+Ojo9/wAACv8FBaH/AADm/wUFof8AAAr/Ojo9/zo6Pf8AAAr/Hx+Z/wAACv8AAAA5AAAAXwAAAG4AAABxAAAAaQAAAGkAAAr/AAAK/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAbAAAAPjo6Pf8AAAr/BQWh/wAA5v8FBaH/AAAK/zo6Pf8AAAA+AAAAGwAAAAkAAAr/Hx+Z/wAACv8AAABKAAAAbgAAAIYAAACDAAAK/x8fmf8AAAr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAGwAAAD46Oj3/AAAK/wUFof8AAOb/BQWh/wAACv86Oj3/AAAAPgAAABsAAAAIAAAAAQAAAAAAAAr/Hx+Z/wAACv8AAAr/AAAK/wAACv8fH5n/AAAK/wAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAACAAAABsAAAA+Ojo9/wAACv8FBaH/AADm/wUFof8AAAr/Ojo9/wAAAD4AAAAbAAAACAAAAAEAAAAAAAAAAAAAAAAAAAr/Hx+Z/wAACv8AAAr/Hx+Z/wAACv8AAAA+AAAAJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAbAAAAPjo6Pf8AAAr/BQWh/wAA5v8FBaH/AAAK/zo6Pf8AAAA+AAAAGwAAAAgAAAABAAAAAAAAAAAAAAAAAAAABgAACv8AAAr/Hx+Z/x8fmf8AAAr/AAAAPgAAABsAAAANAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAGwAAAD46Oj3/AAAK/wUFof8AAOb/BQWh/wAACv86Oj3/AAAAPgAAABsAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAASAAAK/wAACv8fH5n/AAAK/wAAAD0AAAAbAAAACAAAAAMAAAAAAAAAAAAAAAAAAAABAAAACAAAABsAAAA+Ojo9/wAACv8FBaH/AADm/wUFof8AAAr/Ojo9/wAAAD4AAAAbAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8AAAr/Hx+Z/wAACv8AAAA8AAAAGgAAAAgAAAABAAAAAQAAAAAAAAAAAAAAAQAAAAgAAAAbAAAAPjo6Pf8AAAr/BQWh/wAA5v8FBaH/AAAK/zo6Pf8AAAA+AAAAGwAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK/x8fmf8AAAr/AAAAOgAAABkAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAGgAAAD06Oj3/AAAK/wUFof8AAOb/BQWh/wAACv86Oj3/AAAAPgAAABsAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACv8fH5n/AAAK/wAAACgAAAAYAAAABwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABgAAABgAAAA8Ojo9/wAACv8FBaH/AADm/wUFof8AAAr/Ojo9/wAAAD4AAAAbAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK/wAACv8AAAAKAAAADAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAANjo6Pf8AAAr/BQWh/wAA5v8FBaH/AAAK/zo6Pf8AAAA+AAAAGwAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACU6Oj3/AAAK/wUFof8AAOb/BQWh/wAACv86Oj3/AAAAPgAAABsAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOjo9/wAACv8FBaH/AADm/wUFof8AAAr/Ojo9/wAAAD0AAAAbAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADo6Pf8AAAr/BQWh/wAA5v8FBaH/AAAK/zo6Pf8AAAA8AAAAGgAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOjo9/wAACv8FBaH/BQWh/wAACv86Oj3/AAAAOwAAABkAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6Oj3/AAAK/wAACv8AAAr/Ojo9/wAAACkAAAAYAAAABwAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADo6Pf86Oj3/Ojo9/zo6Pf8AAAAQAAAADAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//5/+P/8f/j/+P/w//D/4//g/8f/wf+P/4H/H/8A/j/+PHx//n4g////Af///wH///8B///+A////AH///gA/P/wHGD/4D4B/8B/A/+A/wf/Af8P/gP/H/wH/j/4D/x/8B/8/+A////Af///gP///wH///8D////B////w////8='), auto; }</style>
-
-</html>
+	</body>
+</html> 
