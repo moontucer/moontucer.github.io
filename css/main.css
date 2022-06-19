@@ -4,7 +4,7 @@
 
 
 * {
-  cursor: url("/images/cursor.cur"), auto; 
+  cursor: url("/../images/cursor.cur"), auto; 
 }
 
 #urgent {

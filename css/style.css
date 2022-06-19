@@ -6,7 +6,7 @@
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
-    cursor: url("/images/cursor2.cur"), auto; 
+    cursor: url("/../images/cursor2.cur"), auto; 
     --spinner-size: 150px; /* change the size of the spinner */
     --loading-screen-background: #1C1C1C; /* change the background color of the loading screen */
      --font-family: 'Red Hat Display', sans-serif; /* change the font used for the bottom text of the loading screen */
