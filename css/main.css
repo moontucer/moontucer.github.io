@@ -268,7 +268,7 @@ body {
     -ms-transform: translateX(-25%);
     transform: translateX(-25%); } }
 
-/* Type */
+/* Type & Responsivity */
 body, input, select, textarea {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Roboto", sans-serif;
@@ -277,19 +277,19 @@ body, input, select, textarea {
   letter-spacing: -0.01em;
   line-height: 1.65em; }
   @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
+    body, input, select, button, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
+    body, input, select, button, textarea {
       font-size: 11pt; } }
   @media screen and (max-width: 980px) {
-    body, input, select, textarea {
+    body, input, select, button, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 736px) {
-    body, input, select, textarea {
+    body, input, select, button, textarea {
       font-size: 12pt; } }
   @media screen and (max-width: 480px) {
-    body, input, select, textarea {
+    body, input, select, button, textarea {
       font-size: 12pt; } }
 
 a {
