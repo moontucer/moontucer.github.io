@@ -12,6 +12,14 @@
 }
 
 
+#my-links {
+  color: rgb(250, 115, 115); /* sets the text color of the link */
+  text-decoration: none; /* removes the underline */
+}
+#my-links:hover {
+  color: #EC1839; /* sets the text color on hover */
+  text-decoration: underline; /* adds an underline on hover */
+}
 
 
 html, body, div, span, applet, object,

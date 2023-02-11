@@ -12,6 +12,40 @@
      --font-family: 'Red Hat Display', sans-serif; /* change the font used for the bottom text of the loading screen */
      --text-color: rgb(255, 0, 0); /* change the color used for the bottom text of the loading screen */
 }
+  
+  .project-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    margin-top: 10px;
+    background-color: #f04369;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-image: linear-gradient(to right, #870000 0%, #190A05  51%, #870000  100%);
+    margin: 5px;
+    padding: 7px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+  }
+
+  .project-button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .icon {
+    margin-right: 0.5em;
+    width: 20px;
+    height: 20px;
+}
+  
 
 body.dark 
 {
@@ -22,7 +56,14 @@ body.dark
     --text-black-700:#504e70;
 }
 
-
+#my-links {
+    color: #F04369; /* sets the text color of the link */
+    text-decoration: none; /* removes the underline */
+  }
+  #my-links:hover {
+    color: #EC1839; /* sets the text color on hover */
+    text-decoration: underline; /* adds an underline on hover */
+  }
 
 /*    /\ /\ /\    FOR DEMO   /\ /\ /\    */
 
